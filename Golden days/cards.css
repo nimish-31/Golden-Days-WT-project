@@ -1,0 +1,81 @@
+* {
+        padding: 0;
+        margin: 0;
+        font-family: "Sedan", serif;
+        font-weight: bolder;
+        font-style: normal;
+        
+}
+/* #frame3{
+        min-height:100vh;
+} */
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2vh;
+        height: 20vh;
+}
+.container .heading {
+        width: 50vw;
+        padding-bottom: 3vh;
+}
+
+.container .heading h1 {
+        font-size: 4em;
+        border-bottom: 3px solid black;
+        padding-bottom: 2vh;
+}
+.card-container .col .card img{
+        height: 40vh;
+        width: 25vw;
+        border-radius: 3px;
+}
+.card-container{
+        display: flex;
+        justify-content: center;
+        height: 52vh;
+        align-items: center;
+}
+.card-container .col .card{
+        height: 40vh;
+        margin: 4vh;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+}
+.card-container .col .card .intro{
+        width: 25vw;
+        padding: 5px;
+        box-sizing: border-box;
+        position: absolute;
+        color: white;
+        bottom: 30vh;
+        transition: 2s;
+}
+.card-container .col .card .intro h1{
+        margin: 10px;
+        font-size:40px ;
+}
+.card-container .col .card .intro p{
+        font-size:20px ;
+        margin: 20px;
+        visibility: hidden;
+        opacity: 0;
+}
+.card-container .col .card:hover{
+        cursor: pointer;
+}
+.card-container .col .card:hover .intro{
+        height: 20vh;
+        bottom: 30vh;
+        background: black;
+}
+.card-container .col .card:hover .intro p{
+        opacity: 1;
+        visibility: visible;
+}
+.card-container .col .card:hover img{
+        transform: scale(1.5) rotate(-4deg);
+}

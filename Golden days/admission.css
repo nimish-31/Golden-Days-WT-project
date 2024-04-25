@@ -1,0 +1,133 @@
+/* #logo {
+    margin: 0.7vw 0.7vh;
+}
+
+.navigationbar {
+    background-color: #000000;
+
+}
+
+.nav-link1 {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.nav-link1:hover {
+    color: #f2eabe;
+    text-decoration: none;
+}
+
+.navbar-brand1 {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.navbar-brand1:hover {
+    color: #f2eabe;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(photos/class.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#registrationForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25vw;
+    background:linear-gradient(rgba(4, 9, 30, 0.3),rgba(4,9,30,0.3));
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0,.2);
+    color: white;
+    border-radius: 1vh;
+    padding: 5vh 2vh; 
+}
+.container1 center img{
+    width: 5vw;
+}
+.container1 h1{
+    font-size: 36px;
+    text-align: center;
+    padding: 2vh;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh 3vw;
+}
+
+.common {
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: white;
+        padding: 2vh 4vh 2vh 2vh;
+}
+.common::placeholder{
+    color: white;
+}
+button {
+    width: 70%;
+    height: 4vh;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+label {
+    font-size: 2.5vh;
+}
+.register-link {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+#image {
+    height: 60vh;
+}
+@media only screen and (max-width:500px) {
+    .container2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .common {
+        width: 60vw;
+        height: 3.5vh;
+        border-radius: 2px;
+        padding: 1vh;
+    }
+}

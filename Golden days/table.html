@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Student Admission data</h1>
+    <table border="1" class="table_container">
+        <thead id="heading">
+            <tr>
+                <th>FullName</th>
+                <th>ParentName</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Grade</th>
+                <th>Year of Passing</th>
+                <th>Previous School</th>
+                <th>Referral</th>
+            </tr>
+            <button onclick="fetchData();" id="history">Show History</button>
+        </thead>
+        <tbody id="table-data">
+        </tbody>
+    </table>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/display');
+                const data = await response.json();
+                const tableBody = document.getElementById('table-data');
+                let totalAmount = 0;
+                tableBody.innerHTML = '';
+
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                <td>${item.studname}</td>
+                <td>${item.parentname}</td>
+                <td>${item.email}</td>
+                <td>${item.phone}</td>
+                <td>${item.grade}</td>
+                <td>${item.year_of_passing}</td>
+                <td>${item.pschool}</td>
+                <td>${item.referral}</td>`;
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+    </script>
+</body>
+</html>
+

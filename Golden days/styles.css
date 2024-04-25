@@ -1,0 +1,215 @@
+#logo {
+
+    margin: 0.7vw 0.7vh;
+}
+
+.navigationbar {
+    background-color: #000000;
+    
+}
+.nav-link1{
+    color: #FFD700;
+    text-decoration: none;
+}
+.nav-link1:hover{
+    color: #f2eabe;
+    text-decoration: none;
+}
+.navbar-brand1{
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 3vh;
+}
+.navbar-brand1:hover{
+    color: #f2eabe;
+}
+.btn {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 1vw;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.btn2 {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+    width: 217px;
+    height: 72px;
+    top: 331px;
+    left: 851px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    font-size: 2vh;
+
+}
+
+.btn:hover {
+    background-color: #242424;
+    color: #FFFFFF;
+}
+
+#home {
+    width: 100%;
+    height: 86vh;
+    background: linear-gradient(180deg, #000000 0%, #0d0158 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: -3;
+
+}
+#quote{
+    color: #FFD700;
+    padding-top:10vh;
+    font-size: 5vh;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 82px #0fa,
+    0 0 151px #0fa;
+}
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(25vw,1fr));
+    height: auto;
+    justify-content: center;  
+}
+.card{
+    color: #FFD700;
+    background: #000000;
+    height: auto;
+    margin: 5vh;
+}
+.com{
+    color: #FFD700;
+}
+#frame2{
+    background: linear-gradient(180deg, #0d0158 0%, #467bfe 100%);
+    width: auto;
+    height: 100vh;
+}
+.ic--baseline-local-phone {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+/* .ellipse1{
+    position: absolute;
+    z-index: -1;
+    height: 85vw;
+    width: 85vw;
+    border-radius:50%;
+    border: 2px solid #d6d6d6;
+} */
+.ellipse2{
+    position: absolute;
+    height: 85vw;
+    width: 85vw;
+    border-radius:50%;
+    /* border: 2px solid #d6d6d6; */
+    z-index: -2;
+    animation: revolution 10s infinite ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+}
+.carousel {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    
+}
+.carousel-inner img{
+   height: 70vh;
+   width: 70vw;
+}
+.image
+{
+    height: 60vh;
+    width: 80vw;
+
+}
+.earth{
+    height: 20px;
+    width: 20px;
+
+}
+@keyframes revolution{
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.frame3{
+    background: linear-gradient(180deg, #467bfe 0%,#739bff  100%);
+    justify-content: center;
+}
+  .gallery-container {
+    background: linear-gradient(180deg, #467bfe 0%,#739bff  100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    width:60%;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-gap: 10px;
+    padding: 10px;
+    /* border: 2px solid rgb(255, 254, 222); */
+    border-radius: 5px;
+}
+
+.gallery-item {
+    position: relative;
+    border: 2px solid rgb(255, 254, 222);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.title{
+    text-align: center;
+    color: #FFD700;
+    padding: 5vw;
+}
